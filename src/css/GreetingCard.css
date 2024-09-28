@@ -1,0 +1,31 @@
+/* src/GreetingCard.css */
+.greeting-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-thumbnail {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .card-content {
+    text-align: left;
+  }
+  
+  .card-content h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .card-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }

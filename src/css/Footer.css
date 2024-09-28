@@ -1,0 +1,27 @@
+/* src/css/Footer.css */
+.footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .subscribe-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .subscribe-button:disabled {
+    background-color: #28a745;
+    cursor: not-allowed;
+  }

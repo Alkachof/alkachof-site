@@ -1,0 +1,11 @@
+/* src/Catalog.css */
+.catalog {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
