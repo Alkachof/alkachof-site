@@ -22,7 +22,7 @@ const Catalog = () => {
         <div className="catalog">
             <GreentingCard
                 tumbnail="https://via.placeholder.com/50"
-                title="Boutique de ropa Americana"
+                title="Mi Tienda online"
                 description="Ropa Americana y de segunda mano. Nueva mercancia todos los martes."
             />
             <ItemGrid items={items} />
