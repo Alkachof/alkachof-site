@@ -1,0 +1,29 @@
+name: Auto Approve Code Owner PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if the author is a code owner
+        id: check_code_owner
+        run: |
+          CODE_OWNERS_FILE=".github/CODEOWNERS"
+          PR_AUTHOR="${{ github.actor }}"
+          CODE_OWNER=$(grep -E "^\*" $CODE_OWNERS_FILE | awk '{print $2}' | sed 's/@//')
+
+          if [[ $CODE_OWNER == *"$PR_AUTHOR"* ]]; then
+            echo "is_code_owner=true" >> $GITHUB_ENV
+          else
+            echo "is_code_owner=false" >> $GITHUB_ENV
+          fi
+
+      - name: Auto-approve if author is code owner
+        if: env.is_code_owner == 'true'
+        uses: pullapprove/pullapprove-action@v2.0.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Automatically approved by the Code Owner Action."
