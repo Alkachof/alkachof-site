@@ -6,7 +6,7 @@ const ConsoleScreen = () => {
     return (
         <div>
           {/* Heading Section */}
-          <ConsoleBar />
+          <ConsoleBar /> 
     
           {/* Main Screen Section */}
           <div className="main-screen">
