@@ -14,6 +14,7 @@ heading {
   .notification-icon {
     position: relative;
     margin-right: 20px;
+    cursor: pointer;
   }
   
   .notification-icon .fas {
