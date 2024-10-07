@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Alkachof Site - Beta temprana
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Metodología de trabajo.
 
-## Available Scripts
+El desarrollador a cargo deberá inspeccionar las tareas disponibles en el siguiente link de Trello: https://trello.com/invite/b/670061619445e325935efe3e/ATTI4550e5a17bf6a7b23bc407cca5aaefa6D40A43CA/alkachof-site-mvp y asignar a su responsabilidad unicamente aquellas que estén en la columna de "To Do".
 
-In the project directory, you can run:
+El pago correspondiente a las Epics sera de $ 5.00 USD por Story point acordado. Ejemplificando, un Epic de 5 story points acredita un total de $ 25.00 USD al desarrollador que sea responsable de la tarea.
 
-### `npm start`
+Un Epic se contabilizara para su pago tras cumplir con lo siguiente:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Los checkpoints marcados de las tareas
+Un pull request aprobado que no tenga conflictos con la rama principal "main"
+Deploy exitoso a staging en el host.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Horas laborales de Workana
 
-### `npm test`
+El contrato establecido con Workana es valido unicamente por una sola ocasión, conviniendo que el desarrolladore desista de continuar utilizando la herramienta y acuerde pagos fuera de dicha plataforma.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El presupuesto aprobado disponible en el actual contrato de Workana cubrira las tareas de Onboarding, y la primera Epic que agote el saldo disponible del contrato. Una vez agotado el saldo de Workana, el desarrollador decidirá si desea continuar contribuyendo con el repositorio antes de iniciar un nuevo Epic.
 
-### `npm run build`
+# Roadmap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El proyecto ira definiendo nuevas Epics en el roadmap conforme se avance en el tablero de Trello.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Onboarding
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El desarrollador se considerará a bordo tras completar el checklist:
 
-### `npm run eject`
+1er 1:1 con el lider del proyecto (Vicente Martinez Gomez)
+Accesso al tablero de Trello.
+Acceso al repositorio de github.
+Primer Pull Request subiendo un archivo llamado test.txt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Disponibilidad del proyecto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El proyecto podrá congelarse o detenerse en su totalidad sin previo aviso. Sin afectar las Epics completadas por el desarrollador.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Ritmo de trabajo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+El desarrollador podra tomarse el tiempo que considere necesario para efectuar un pull request. Recomendando que su ritmo de trabajo podria afectar sus ingresos, ya que el lider del proyecto podria tomar epics a su responabiliad si estos se demoran por deuda técnica por parte del desarrollador.
 
-## Learn More
+# Penalizaciones
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En ningun momento el desarrollador será penalizado por sus contribuciones al proyecto. Animandole a hacer todas las preguntas que requiera para poder avanzar a un ritmo constante.
