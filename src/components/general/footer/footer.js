@@ -12,22 +12,23 @@ function Footer() {
     }
   };
 
-  return ( 
+  return (
     <footer className="footer" role="contentinfo">
-      {/* <div>
+      <div className="footer-content">
         <h4>Contacto</h4>
         <ul>
           <li>Telefono: 12345678</li>
           <li>Email: 0g2zj@example.com</li>
         </ul>
       </div>
-      <div>
+      <div className="footer-content">
         <h4>Términos y Condiciones</h4>
         <ul>
           <li>Terminos y Condiciones</li>
+          <li>Política de Privacidad</li>
         </ul>
       </div>
-      <div>
+      <div className="footer-content">
         <h4>Siguenos en nuestras redes sociales</h4>
         <ul>
           <li>
@@ -41,13 +42,11 @@ function Footer() {
             {" "}
             <a href="https://www.instagram.com">Instagram</a>
           </li>
-        </ul> 
-      </div> */}
-      <div>
-        <h4>Suscribete a mi catalogo y enterate cuando tengo mas productos!</h4>
-        <button className="subscribe-button" onClick={handleSubscribe}>
-          {subscribed ? "✔ Suscrito" : "Suscribirme"}
-        </button>
+        </ul>
+      </div>
+      <br></br>
+      <div className="footer-content copyright"> 
+        © 2024 Alkachof. Todos los derechos reservados.
       </div>
     </footer>
   );
