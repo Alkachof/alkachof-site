@@ -68,7 +68,12 @@ input::placeholder{
 .input-error::placeholder{
   color: #ff4d4d;
 }
-/* modal, animation from right to left on display, and full screen on mobile */
+
+.arrow-back{
+  cursor: pointer;
+  stroke:  #838383;
+  width: 24px;
+} 
 
 .modal{
   position: fixed;
@@ -80,13 +85,21 @@ input::placeholder{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   transform: translateX(100%);
   transition: transform 0.3s;
 }
 
 .modal.open{
   transform: translateX(0);
+}
+
+.modal-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
 }
 
 .modal-content{
