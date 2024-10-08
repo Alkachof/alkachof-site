@@ -7,6 +7,6 @@ test('App Component Test - Example', async () => {
   await act(async () => {
     render(<App />);
   });
-  const linkElement = await waitFor(() => screen.getByText(/Mi Tienda online/i));
+  const linkElement = await waitFor(() => screen.getByText(/Alkachof/i));
   expect(linkElement).toBeInTheDocument();
 });
