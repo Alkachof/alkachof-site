@@ -4,9 +4,9 @@ import Card from "../../general/card/card";
 import Button from "../../general/button/button";
 import useInput from "../../../hooks/useInput/useInput";
 
-function Signin({ open, handleClose }) {
-  const email = useInput("email");
-  const password = useInput("password");
+function Signin({ open, handleClose, handleForgetPassword }) {
+  const email = useInput("");
+  const password = useInput("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,9 +14,8 @@ function Signin({ open, handleClose }) {
   };
 
   return (
-    <Modal open={open} handleClose={handleClose}>
+    <Modal open={open} handleClose={handleClose} title={"Iniciar sesión"}>
       <Card>
-        <h2>Iniciar sesión</h2>
         <Input
           label="Correo electrónico"
           type="email"
@@ -29,9 +28,14 @@ function Signin({ open, handleClose }) {
           value={password.value}
           onChange={password.onChange}
         />
-        <Button type="submit" onClick={handleSubmit}>
-          Ingresar
-        </Button>
+        
+        <Button
+          type="submit"
+          text="Aceptar"
+          onClick={handleSubmit}
+        ></Button>
+        
+        <Button type="link" text="Olvidé mi contraseña" onClick={handleForgetPassword}></Button>
       </Card>
     </Modal>
   );
