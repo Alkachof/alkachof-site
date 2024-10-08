@@ -10,7 +10,7 @@ describe("Signup", () => {
       </BrowserRouter>
     );
 
-    const modalContent = screen.getByText("Registro");
+    const modalContent = screen.getByText("Registrarse");
 
     expect(modalContent).toBeInTheDocument();
   });
