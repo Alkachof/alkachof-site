@@ -43,7 +43,7 @@ function Footer() {
             {" "}
             <a href="https://www.instagram.com">Instagram</a>
           </li>
-        </ul>
+        </ul> 
       </div> */}
       <div>
         <h4>Suscribete a mi catalogo y enterate cuando tengo mas productos!</h4>
