@@ -5,7 +5,6 @@ function Footer() {
 
   const handleSubscribe = async () => {
     try {
-      await subscribeToCatalog();
       setSubscribed(true);
     } catch (error) {
       console.error("Error subscribing to catalog", error);
@@ -13,7 +12,7 @@ function Footer() {
     }
   };
 
-  return (
+  return ( 
     <footer className="footer" role="contentinfo">
       {/* <div>
         <h4>Contacto</h4>
