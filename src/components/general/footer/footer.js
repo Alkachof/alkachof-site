@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { subscribeToCatalog } from "../../../services/subscriptionService";
 
 function Footer() {
   const [subscribed, setSubscribed] = useState(false);
