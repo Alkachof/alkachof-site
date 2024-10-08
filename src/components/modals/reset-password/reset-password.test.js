@@ -1,13 +1,17 @@
-import {render, screen} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import ResetPassword from "./reset-password";
+import { BrowserRouter } from "react-router-dom";
 
 describe("ResetPassword", () => {
+  test("Renders ResetPassword", () => {
+    render(
+      <BrowserRouter>
+        <ResetPassword open={true} handleClose={jest.fn()} />
+      </BrowserRouter>
+    );
 
-    test("Renders ResetPassword", () => {
-        render(<ResetPassword open={true} handleClose={jest.fn()}/>);
+    const modalContent = screen.getByText("Recuperar contraseña");
 
-        const modalContent = screen.getByText("Recuperar contraseña");
-
-        expect(modalContent).toBeInTheDocument();
-    })
-})
+    expect(modalContent).toBeInTheDocument();
+  });
+});
