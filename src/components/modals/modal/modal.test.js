@@ -1,12 +1,15 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Modal from "./modal";
+import { BrowserRouter } from "react-router-dom";
 
 describe("Modal component", () => {
   test("renders modal when open is true", () => {
     render(
-      <Modal open={true} onClose={jest.fn()}>
-        <div>Modal Content</div>
-      </Modal>
+      <BrowserRouter>
+        <Modal open={true} onClose={jest.fn()}>
+          <div>Modal Content</div>
+        </Modal>
+      </BrowserRouter>
     );
 
     const modalContent = screen.getByText("Modal Content");
@@ -18,9 +21,11 @@ describe("Modal component", () => {
 
   test("does not render modal when open is false", () => {
     render(
-      <Modal open={false} onClose={jest.fn()}>
-        <div>Modal Content</div>
-      </Modal>
+      <BrowserRouter>
+        <Modal open={false} onClose={jest.fn()}>
+          <div>Modal Content</div>
+        </Modal>
+      </BrowserRouter>
     );
 
     const modalContent = screen.queryByText("Modal Content");
@@ -28,5 +33,24 @@ describe("Modal component", () => {
 
     const modal = screen.queryByRole("dialog");
     expect(modal).not.toHaveClass("modal open");
+  });
+
+  test("calls onClose when close button is clicked", () => {
+    const handleClose = jest.fn();
+    render(
+      <BrowserRouter>
+        <Modal open={true} handleClose={handleClose}>
+          <div>Modal Content</div>
+        </Modal>
+      </BrowserRouter>
+    );
+
+    const closeButton =  screen.getByRole("navigation");
+
+    expect(handleClose).toHaveBeenCalledTimes(0);
+ 
+    fireEvent.click(closeButton); 
+
+    expect(handleClose).toHaveBeenCalledTimes(1);
   });
 });
