@@ -7,11 +7,10 @@ import ResetPassword from "../components/modals/reset-password/reset-password";
 import Footer from "../components/general/footer/footer";
 
 function Landing() {
-    const loginModal = useModal();
-    const signupModal = useModal();
-    const forgotPasswordModal = useModal();
+  const loginModal = useModal();
+  const signupModal = useModal();
+  const forgotPasswordModal = useModal();
 
-  
   return (
     <div className="container" role="main">
       <h1>Alkachof</h1>
@@ -20,12 +19,21 @@ function Landing() {
       <div>
         <Button text="Ingresar" onClick={loginModal.toggleModal} />
         <Button text="Registrarse" onClick={signupModal.toggleModal} />
-        <Button text="Recuperar contraseña"  onClick={forgotPasswordModal.toggleModal} />
+        <Button
+          text="Recuperar contraseña"
+          onClick={forgotPasswordModal.toggleModal}
+        />
       </div>
 
       <Signin open={loginModal.showModal} handleClose={loginModal.closeModal} />
-      <Signup open={signupModal.showModal} handleClose={signupModal.closeModal} />
-      <ResetPassword open={forgotPasswordModal.showModal} handleClose={forgotPasswordModal.closeModal} />
+      <Signup
+        open={signupModal.showModal}
+        handleClose={signupModal.closeModal}
+      />
+      <ResetPassword
+        open={forgotPasswordModal.showModal}
+        handleClose={forgotPasswordModal.closeModal}
+      />
       <Footer />
     </div>
   );
