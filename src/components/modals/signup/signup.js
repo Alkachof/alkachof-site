@@ -5,24 +5,17 @@ import Button from "../../general/button/button";
 import useInput from "../../../hooks/useInput/useInput";
 
 function Signup({ open, handleClose }) {
-  const name = useInput("name");
-  const email = useInput("email");
-  const password = useInput("password");
+  const name = useInput("");
+  const email = useInput("");
+  const password = useInput("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(name.value, email.value, password.value);
   };
 
-  const handleReset = (event) => {
-    event.preventDefault();
-    name.reset();
-    email.reset();
-    password.reset();
-  };
-
   return (
-    <Modal open={open} handleClose={handleClose}>
+    <Modal open={open} handleClose={handleClose} title={"Registrarse"}>
       <Card>
         <h2>Registro</h2>
 
