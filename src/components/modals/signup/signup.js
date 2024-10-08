@@ -22,7 +22,7 @@ function Signup({ open, handleClose }) {
   };
 
   return (
-    <Modal open={open} onClose={handleClose}>
+    <Modal open={open} handleClose={handleClose}>
       <Card>
         <h2>Registro</h2>
 
