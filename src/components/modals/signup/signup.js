@@ -17,8 +17,6 @@ function Signup({ open, handleClose }) {
   return (
     <Modal open={open} handleClose={handleClose} title={"Registrarse"}>
       <Card>
-        <h2>Registro</h2>
-
         <Input
           label="Nombre"
           value={name.value}
