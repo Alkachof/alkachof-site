@@ -22,11 +22,14 @@ describe("Modal component", () => {
   test("does not render modal when open is false", () => {
     render(
       <BrowserRouter>
-        <Modal open={false} onClose={jest.fn()}>
+        <Modal title="Modal Title" open={false} onClose={jest.fn()}>
           <div>Modal Content</div>
         </Modal>
       </BrowserRouter>
     );
+
+    const modalTitle = screen.queryByText("Modal Title");
+    expect(modalTitle).not.toBeInTheDocument();
 
     const modalContent = screen.queryByText("Modal Content");
     expect(modalContent).not.toBeInTheDocument();
