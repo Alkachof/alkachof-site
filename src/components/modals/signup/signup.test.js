@@ -1,14 +1,17 @@
-import {render,screen} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Signup from "./signup";
-
+import { BrowserRouter } from "react-router-dom";
 
 describe("Signup", () => {
+  test("Renders Signup", () => {
+    render(
+      <BrowserRouter>
+        <Signup open={true} handleClose={jest.fn()} />{" "}
+      </BrowserRouter>
+    );
 
-    test("Renders Signup", () => {
-        render(<Signup open={true} handleClose={jest.fn()}/>);
+    const modalContent = screen.getByText("Registro");
 
-        const modalContent = screen.getByText("Registro");
-
-        expect(modalContent).toBeInTheDocument();
-    })
-})
+    expect(modalContent).toBeInTheDocument();
+  });
+});
