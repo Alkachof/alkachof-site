@@ -1,6 +1,6 @@
 function CatalogItem({ item }) {
   return (
-    <div className="catalog-item" role="region">
+    <div className="catalog-item" role="listitem">
       <div className="image-container">
       <img src={item.image} alt={item.name} />
       </div>

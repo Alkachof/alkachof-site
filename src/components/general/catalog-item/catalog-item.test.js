@@ -3,7 +3,7 @@ import CatalogItem from "./catalog-item";
 
 test("Renders CatalogItem", () => {
     render(<CatalogItem item={{name: "Title test", image: "http://testimage33.com", price: "24" }} />);
-    const catalogItemElement = screen.getByRole("region");
+    const catalogItemElement = screen.getByRole("listitem");
     expect(catalogItemElement).toBeInTheDocument();
 
     const titleElement = screen.getByText("Title test");
